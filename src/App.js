@@ -6,7 +6,6 @@ import Slider from "./components/Slider";
 import SliderData from "./data/SliderData";
 import MenuData from "./data/MenuData";
 import Dropdown from "./components/Dropdown";
-import Information from "./components/Information";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
