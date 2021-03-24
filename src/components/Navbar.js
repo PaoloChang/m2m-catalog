@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components/macro";
 import { Link } from "react-router-dom";
-import { menuData } from "../data/MenuData";
 import { Button } from "./Button";
 import { FaBars } from "react-icons/fa";
 
@@ -71,11 +70,11 @@ const NavBtn = styled(Button)`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ menuData, toggle }) => {
   return (
     <Nav>
       <Logo>M2M</Logo>
-      <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((menu, index) => (
           <NavMenuLinks key={index} to={menu.link}>

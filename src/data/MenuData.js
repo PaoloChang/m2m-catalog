@@ -1,4 +1,4 @@
-export const menuData = [
+const MenuData = [
   { title: "Space", link: "/spaces" },
   { title: "About", link: "/about" },
   { title: "Neighbourhood", link: "/neighbourhood" },
@@ -6,3 +6,5 @@ export const menuData = [
   { title: "The Team", link: "/the-team" },
   { title: "Registration", link: "/registration" },
 ];
+
+export default MenuData;
