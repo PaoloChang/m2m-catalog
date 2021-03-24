@@ -72,11 +72,11 @@ const Content = styled.div`
   flex-direction: column;
   max-width: 1600px;
   width: calc(100% - 100px);
-  color: #fff;
+  color: #FFFFFF;
 
   h1 {
-    font-size: clamp(1rem, 8vw, 2rem);
-    font-weight: 400;
+    font-size: clamp(1rem, 8vw, 3rem);
+    font-weight: 700;
     text-transform: uppercase;
     text-shadow: 0 0 20 rgba(0, 0, 0, 0.4);
     text-align: left;
@@ -135,7 +135,7 @@ const Slider = ({ slides }) => {
     const nextSlide = () => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
     };
-    timeout.current = setTimeout(nextSlide, 3000);
+    timeout.current = setTimeout(nextSlide, 5000);
     return () => {
       if (timeout.current) {
         clearTimeout(timeout.current);
