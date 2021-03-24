@@ -72,7 +72,7 @@ const Content = styled.div`
   flex-direction: column;
   max-width: 1600px;
   width: calc(100% - 100px);
-  color: white;
+  color: #FFFFFF;
 
   h1 {
     font-size: clamp(1rem, 8vw, 3rem);

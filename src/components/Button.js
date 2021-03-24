@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+export const ButtonWrap = styled(Link)`
+  display: flex;
+  justify-content: center;
+`;
+
 export const Button = styled(Link)`
   background-color: ${({ primary }) => (primary ? "#000d1a" : "#CD853F")};
   white-space: nowrap;
